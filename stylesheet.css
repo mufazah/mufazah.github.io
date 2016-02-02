@@ -8,7 +8,6 @@ font-size: 8pt;
 line-height: 18px;
 text-transform: none;
 text-align: adjustable;
-background-image:url(mozaik.jpg);
 background-position: right;
 background-repeat: repeat;
 background-attachment: fixed;
@@ -39,7 +38,7 @@ color:#929292;
 #title {
 font-family:impact;
 font-size: 40pt;
-color: #ffffff;
+color: white;
 text-decoration: none;
 text-shadow: #b1b1b1 1px 1px 1px;
 text-decoration: none;
