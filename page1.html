@@ -1,13 +1,33 @@
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+
+	<title>EasyZoom, jQuery image zoom plugin</title>
+
+	<link rel="stylesheet" href="css/example.css" />
+	<link rel="stylesheet" href="css/pygments.css" />
+	<link rel="stylesheet" href="css/easyzoom.css" />
+
+	<!--
+	EasyZoom by Matt Hinchliffe <http://maketea.co.uk>
+	Find out more at GitHub <http://github.com/i-like-robots/EasyZoom>
+	-->
+
+	<!-- Google Analytics tracking code -->
+	<script>
+		var _gaq=[['_setAccount','UA-2508361-9'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+
+
+
+
 <title>Lula Barneche</title>
-
-<script type="text/javascript">// Instantiate EasyZoom plugin
-var $easyzoom = $('.easyzoom').easyZoom();
-
-// Get the instance API
-var api = $easyzoom.data('easyZoom');
-</script>
 </head>
 
 <LINK REL=stylesheet HREF="stylesheet.css" TYPE="text/css">
@@ -17,20 +37,6 @@ body {background-image: url(http://www.designbolts.com/wp-content/uploads/2013/0
 #title {
 color: black;
 }
-
-
-
-
-/* Shrink wrap strategy 2 */
-.easyzoom {
-    display: inline-block;
-}
-.easyzoom img {
-    vertical-align: bottom;
-}
-
-
-
 </style>
 
 <body>
@@ -48,32 +54,145 @@ color: black;
 <a href="page4.html" class="links">    Contact</a>
 </div>
 
-
-
 <div class="post">
-<h1>Lula</h1>
-<p>I was born and raised in Buenos Aires, Argentina. I am fluent both in Spanish and English. I grew up in the country side and therefore I've been surrounded by animals and nature all of my life. 
-<br>
 
-<div class="easyzoom">
-    <a href="campo/0.png">
-        <img src="campo/00.png" alt=""/>
-    </a>
+I was born and raised in Buenos Aires, Argentina. I am fluent both in Spanish and English. I grew up in the country side and therefore I've been surrounded by animals and nature all of my life.	
+<br><br>
+In 2012 I moved to the United States to pursue my Bacherlors degree in Performing Arts. I've always wanted to travel and explore the world so I began travelling everywhere I could. You can read more about my trips in my travel section. You can also read about my acting journey in my art section on the navigation bar. 	
+<br>
 </div>
 
-<center><img src="campo/0.png"><img src="campo/00.png"><img src="campo/1.png"><img src="campo/2.png"><img src="campo/3.png"><img src="campo/4.png"><img src="campo/5.png"><img src="campo/6.png"><img src="campo/7.png"><img src="campo/8.png"></center>
-<br>
-These are my animals.
-<br>
-<br>
-<center><img src="animals/1.png"><img src="animals/2.png"><img src="animals/3.png"><img src="animals/4.png"><img src="animals/5.png"><img src="animals/6.png"><img src="animals/7.png"></center>
-<br>
-<br>
-In 2012 I moved to the Unied States to pursue my Bacherlors degree in Performing Arts. I've always wanted to travel and explore the world so I began travelling everywhere I could. You can read more about my trips in my travel section. You can also read about my acting journey in my art section on the navigation bar. 
-<br>
+			<center><div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails">
+				<a href="campo/0.png">
+					<img src="campo/0.png" alt="" width="100%"/>
+				</a>
+			</div></center>
 
-</div>
+			<ul class="thumbnails">
+				<li>
+					<a href="campo/0.png" data-standard="campo/0.png">
+						<img src="campo/0.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="campo/00.png" data-standard="campo/00.png">
+						<img src="campo/00.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="campo/1.png" data-standard="campo/1.png">
+						<img src="campo/1.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="campo/2.png" data-standard="campo/2.png">
+						<img src="campo/2.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="campo/3.png" data-standard="campo/3.png">
+						<img src="campo/3.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="campo/4.png" data-standard="campo/4.png">
+						<img src="campo/4.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="campo/5.png" data-standard="campo/5.png">
+						<img src="campo/5.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="campo/6.png" data-standard="campo/6.png">
+						<img src="campo/6.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="campo/7.png" data-standard="campo/7.png">
+						<img src="campo/7.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="campo/8.png" data-standard="campo/8.png">
+						<img src="campo/8.png" alt="" />
+					</a>
+				</li>
+
+<li>
+					<a href="animals/1.png" data-standard="animals/1.png">
+						<img src="animals/1.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="animals/2.png" data-standard="animals/2.png">
+						<img src="animals/2.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="animals/3.png" data-standard="animals/3.png">
+						<img src="animals/3.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="animals/4.png" data-standard="animals/4.png">
+						<img src="animals/4.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="animals/5.png" data-standard="animals/5.png">
+						<img src="animals/5.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="animals/6.png" data-standard="animals/6.png">
+						<img src="animals/6.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="animals/7.png" data-standard="animals/7.png">
+						<img src="animals/7.png" alt="" />
+					</a>
+				</li>
+
+			</ul>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="dist/easyzoom.js"></script>
+	<script>
+		// Instantiate EasyZoom instances
+		var $easyzoom = $('.easyzoom').easyZoom();
+
+		// Setup thumbnails example
+		var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
+
+		$('.thumbnails').on('click', 'a', function(e) {
+			var $this = $(this);
+
+			e.preventDefault();
+
+			// Use EasyZoom's `swap` method
+			api1.swap($this.data('standard'), $this.attr('href'));
+		});
+
+		// Setup toggles example
+		var api2 = $easyzoom.filter('.easyzoom--with-toggle').data('easyZoom');
+
+		$('.toggle').on('click', function() {
+			var $this = $(this);
+
+			if ($this.data("active") === true) {
+				$this.text("Switch on").data("active", false);
+				api2.teardown();
+			} else {
+				$this.text("Switch off").data("active", true);
+				api2._init();
+			}
+		});
+	</script>
+
 
 </body>
-
+</html>
 </html>
