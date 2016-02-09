@@ -5,15 +5,26 @@
 <LINK REL=stylesheet HREF="stylesheet.css" TYPE="text/css">
 <style type="text/css">
 body {background-image: url(http://www.designbolts.com/wp-content/uploads/2013/02/Golf-Shirt-Grey-Seamless-Pattern-For-Website-Background.jpg);}
-
-
 </style>
 
 <body>
 <div class="content">
 <br>
 <a href="index.html"><img src="frontpage.jpg" width="969" height="490"></a>
-<span id="title">Welcome!</span>
+<span id="title">
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+{
+var name = prompt ('Your name','');
+var color = prompt ('Color name','');
+document.write("<font color="+color+">Welcome to my website "+name+"!</font>")
+}
+</SCRIPT>
+
+
+</span>
 
 <div class="navbar">
 <br>
@@ -28,16 +39,19 @@ body {background-image: url(http://www.designbolts.com/wp-content/uploads/2013/0
 
 <div class="post">
 <h1>My Page</h1>
-<p>Hi I am Lula. Thank you for visiting my page! Here you can learn a little bit about me.
+<p id="afont">Hi I am Lula. Thank you for visiting my page! Here you can learn a little bit about me.
 Feel free to navigate and if you have questions you can contact me.
 <br>
 <br>
 <br>
-Have fun checking my page!</p>
-
-
+Have fun checking my page and changing my page font color!</p>
+<script src="javascript/font.js"></script>
+<button type="button" onclick="myFunction()">Change color</button>
+<br>
+<button type="button"
+onclick="document.getElementById('time').innerHTML = Date()">Display Date and Time.</button>
+<p id="time"></p>
 </div>
-
 </body>
 
 </html>
