@@ -1,7 +1,15 @@
 <html>
 <head>
 <title>Lula Barneche</title>
+
+<script type="text/javascript">// Instantiate EasyZoom plugin
+var $easyzoom = $('.easyzoom').easyZoom();
+
+// Get the instance API
+var api = $easyzoom.data('easyZoom');
+</script>
 </head>
+
 <LINK REL=stylesheet HREF="stylesheet.css" TYPE="text/css">
 <style type="text/css">
 body {background-image: url(http://www.designbolts.com/wp-content/uploads/2013/02/Golf-Shirt-Grey-Seamless-Pattern-For-Website-Background.jpg);}
@@ -9,6 +17,18 @@ body {background-image: url(http://www.designbolts.com/wp-content/uploads/2013/0
 #title {
 color: black;
 }
+
+
+
+
+/* Shrink wrap strategy 2 */
+.easyzoom {
+    display: inline-block;
+}
+.easyzoom img {
+    vertical-align: bottom;
+}
+
 
 
 </style>
@@ -34,6 +54,13 @@ color: black;
 <h1>Lula</h1>
 <p>I was born and raised in Buenos Aires, Argentina. I am fluent both in Spanish and English. I grew up in the country side and therefore I've been surrounded by animals and nature all of my life. 
 <br>
+
+<div class="easyzoom">
+    <a href="campo/0.png">
+        <img src="campo/00.png" alt=""/>
+    </a>
+</div>
+
 <center><img src="campo/0.png"><img src="campo/00.png"><img src="campo/1.png"><img src="campo/2.png"><img src="campo/3.png"><img src="campo/4.png"><img src="campo/5.png"><img src="campo/6.png"><img src="campo/7.png"><img src="campo/8.png"></center>
 <br>
 These are my animals.
