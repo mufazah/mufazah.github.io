@@ -1,6 +1,32 @@
 <html>
 <head>
 <title>Lula Barneche</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+
+	<link rel="stylesheet" href="css/example.css" />
+	<link rel="stylesheet" href="css/pygments.css" />
+	<link rel="stylesheet" href="css/easyzoom.css" />
+
+	<!--
+	EasyZoom by Matt Hinchliffe <http://maketea.co.uk>
+	Find out more at GitHub <http://github.com/i-like-robots/EasyZoom>
+	-->
+
+	<!-- Google Analytics tracking code -->
+	<script>
+		var _gaq=[['_setAccount','UA-2508361-9'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+
+
+
+
 </head>
 <LINK REL=stylesheet HREF="stylesheet.css" TYPE="text/css">
 <style type="text/css">
@@ -27,18 +53,114 @@ body {background-image: url(http://www.designbolts.com/wp-content/uploads/2013/0
 
 <div class="post">
 <h1>ACTING</h1>
-<p>I began college in September of 2012. After 4 years I am finally graduating May. Here I'd like to share some pictures of my biggest projects. After graduating I am moving to California. I want to be part of a theater ensemble and do some programming on the side! 
+I began college in September of 2012. After 4 years I am finally graduating May. Here I'd like to share some pictures of my biggest projects. After graduating I am moving to California. I want to be part of a theater ensemble and do some programming on the side! 
 <br><br>
 The International Performing Ensemble program allowed me to travel to Sibiu, Romania to perform Bury The Dead. I also had the opportunity to travel with my ensemble Peasants of the Guild to Argentina. We made a crowfunding camoaign and raised 2,000 dollars. Lastly, we are working on our last IPE show. It will be during the first week of March. Stay tuned!!
 <br>
-<center><img src="ensemble/1.png"><img src="ensemble/2.png"><img src="ensemble/3.png">
-<br>
-<br><img src="ensemble/b.png"><img src="ensemble/c.png"><img src="ensemble/d.png"><img src="ensemble/e.png"><br><img src="ensemble/j.png"><br><br><img src="ensemble/g.png"><br><img src="ensemble/a.png"><br></center>
+
+
+
+			<center><div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails">
+				<a href="campo/0.png">
+					<img src="campo/0.png" alt="" width="100%"/>
+				</a>
+			</div></center>
+
+			<ul class="thumbnails">
+				<li>
+					<a href="ensemble/3.png" data-standard="ensemble/3.png">
+						<img src="ensemble/3.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="ensemble/4.png" data-standard="ensemble/4.png">
+						<img src="ensemble/4.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="ensemble/5.png" data-standard="ensemble/5.png">
+						<img src="ensemble/5.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="ensemble/7.png" data-standard="ensemble/7.png">
+						<img src="ensemble/7.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="ensemble/8.png" data-standard="ensemble/8.png">
+						<img src="ensemble/8.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="ensemble/9.png" data-standard="ensemble/9.png">
+						<img src="censemble/9.png" alt="" />
+					</a>
+				</li>
+								<li>
+					<a href="ensemble/10.png" data-standard="ensemble/10.png">
+						<img src="censemble/10.png" alt="" />
+					</a>
+				</li>				<li>
+					<a href="ensemble/11.png" data-standard="ensemble/11.png">
+						<img src="censemble/11.png" alt="" />
+					</a>
+				</li>				<li>
+					<a href="ensemble/12.png" data-standard="ensemble/12.png">
+						<img src="censemble/12.png" alt="" />
+					</a>
+				</li>
+
+												<li>
+					<a href="ensemble/1.png" data-standard="ensemble/1.png">
+						<img src="ensemble/1.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="ensemble/6.png" data-standard="ensemble/6.png">
+						<img src="ensemble/6.png" alt="" />
+					</a>
+				</li>
+
+			</ul>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="dist/easyzoom.js"></script>
+	<script>
+		// Instantiate EasyZoom instances
+		var $easyzoom = $('.easyzoom').easyZoom();
+
+		// Setup thumbnails example
+		var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
+
+		$('.thumbnails').on('click', 'a', function(e) {
+			var $this = $(this);
+
+			e.preventDefault();
+
+			// Use EasyZoom's `swap` method
+			api1.swap($this.data('standard'), $this.attr('href'));
+		});
+
+		// Setup toggles example
+		var api2 = $easyzoom.filter('.easyzoom--with-toggle').data('easyZoom');
+
+		$('.toggle').on('click', function() {
+			var $this = $(this);
+
+			if ($this.data("active") === true) {
+				$this.text("Switch on").data("active", false);
+				api2.teardown();
+			} else {
+				$this.text("Switch off").data("active", true);
+				api2._init();
+			}
+		});
+	</script>
 <br>
 <h1>PROGRAMING</h1>
-<p>Another thing I love is programming. When I was bored I used to create webpages. One summer when I was 13 years old, I spent the entire break learning about HTML, and CSS. It has been years since I last wrote code. It's fun and I want to get back at it. I wish I had some of my old projects to show you!
+Another thing I love is programming. When I was bored I used to create webpages. One summer when I was 13 years old, I spent the entire break learning about HTML, and CSS. It has been years since I last wrote code. It's fun and I want to get back at it. I wish I had some of my old projects to show you! 
 </div>
-
 </body>
 
 </html>
