@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @gemstone.name %>
+</p>
+
+<p>
+  <strong>Keywords:</strong>
+  <%= @gemstone.keywords %>
+</p>
+
+<p>
+  <strong>Qualities:</strong>
+  <%= @gemstone.qualities %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @gemstone.picture %>
+</p>
+
+<%= link_to 'Edit', edit_gemstone_path(@gemstone) %> |
+<%= link_to 'Back', gemstones_path %>
