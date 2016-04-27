@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Welcome to the "Quote & Gemstone Shuffler"!</h1>
+Click shuffle to discover an inspirational quote together with a gemstone. 
+
+    <% @posts.each do |post| %>
+    <br><br>
+      <b>  <%= post.quote %> </b>
+        <br>
+  <%= post.author %>. Tags:
+  <i><%= post.tag %></i>
+   <% end %>
+
+<% @gemstones.each do |gemstone| %>
+    <br><br>
+      <b>  <%= gemstone.name %> </b>
+        <br>
+  <%= gemstone.properties %> Tags:
+  <i><%= gemstone.tag %></i>
+   <br>
+  <%= gemstone.picture %>
+   <% end %>
+<br>
+
+<br><%= link_to 'Shuffle', posts_path %>
+<br>
+<%= link_to 'Show all Quotes', url_for('/posts/1') %>
+<br>
+<%= link_to 'Show all Gemstones', url_for('/gemstones') %>
+<br>
+<br>
+This app has been created to promote inspiration with quotes and boost your knowledge on gemstones.

@@ -1,10 +1,13 @@
 class ArticlesController < ApplicationController
  
-  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
 
-  def index
+def index
+  if params[:tag]
+    @articles = Article.tagged_with(params[:tag])
+  else
     @articles = Article.all
   end
+end
  
   def show
     @article = Article.find(params[:id])
